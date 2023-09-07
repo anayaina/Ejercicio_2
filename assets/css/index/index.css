@@ -776,27 +776,98 @@ tr {
 }
 
 /* Reseñas */
-.container-reseña{
+.review {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .testimonial-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .game-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .game-image {
+    max-width: 20%;
+    height: auto;
+  }
+
+  .game-description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 20px 0;
+  }
+
+  .game-rating {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .rating-label {
+    font-weight: bold;
+  }
+
+  .rating-value {
+    color: var(--color-secundario);
+    font-weight: bold;
+  }
+
+  .testimonial-image {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+  }
+
+  .testimonial-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .testimonial-content {
+    flex-grow: 1;
+  }
+
+  .game-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .user-info {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .user-name {
+    font-size: 18px;
+    color: #333;
+  }
+
+  .user-review {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  .container-reseña{
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 10%;
-}
+  }
 
-.card-reseña{
-    position: relative;
-    box-shadow: none;
-    transform-origin: center;
-}
 
-.card-header{
-    font-size: 30px;
-}
-
-.blockquote{
-    font-size: 15px;
-    color: var(--color-black);
-    font-style: italic;
-}
 
 /* Footer */
 .footer-basic {
