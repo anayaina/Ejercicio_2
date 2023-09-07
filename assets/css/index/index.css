@@ -8,6 +8,7 @@
     scroll-padding-top: 2rem;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -473,18 +474,19 @@ nav input {
 }
 
 /* Sección Juegos Destacados */
+
 .card-body-juegos-destacados {
     margin-left: 10%;
     margin-right: 10%;
-}
+  }
 
-.wrapper {
+  .wrapper {
     display: flex;
     width: 100%;
     justify-content: space-around;
-}
+  }
 
-.card-wrapper {
+  .card-wrapper {
     width: 450px;
     height: 450px;
     border-radius: 15px;
@@ -495,9 +497,9 @@ nav input {
     align-items: flex-end;
     transition: 0.4s ease-out;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-}
+  }
 
-.card-wrapper:before {
+  .card-wrapper:before {
     content: "";
     position: absolute;
     top: 0;
@@ -510,13 +512,13 @@ nav input {
     z-index: 2;
     transition: 0.5s;
     opacity: 0;
-}
+  }
 
-.card-wrapper:hover:before {
+  .card-wrapper:hover:before {
     opacity: 1;
-}
+  }
 
-.card-wrapper img {
+  .card-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -524,32 +526,59 @@ nav input {
     top: 0;
     left: 0;
     border-radius: 15px;
-}
+  }
 
-.card-wrapper .info {
+  .card-wrapper .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .card-wrapper:hover .overlay  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  .card-wrapper .overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+    filter: brightness(80%);
+  }
+
+  .card-wrapper .info {
     position: relative;
     z-index: 3;
     color: white;
     opacity: 0;
     transform: translateY(30px);
     transition: 0.5s;
-}
+  }
 
-.card-wrapper:hover .info {
+  .card-wrapper:hover .info {
     opacity: 1;
     transform: translateY(0px);
-}
+  }
 
-.card-wrapper .info img {
+  .card-wrapper .info img {
     margin: 0;
-}
+  }
 
-.link-info, .link-info:link, .link-info:visited{
+  .link-info, .link-info:link, .link-info:visited{
     position: relative;
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
-}
+  }
 
 .button-juegos {
     background-color: #FFFFFF;
