@@ -370,7 +370,6 @@ nav input {
 }
 
 /* Banner llamativo */
-
 .text .title-banner-texto{
     font-weight: 600;
     color: var(--color-background);
@@ -623,7 +622,6 @@ nav input {
 
 .card-tabs {
     width: auto;
-    height: auto;
     background: white;
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
@@ -865,7 +863,6 @@ tr {
     border-radius: 5px;
     cursor: pointer;
 }
-
 
 #btn-ir-arriba {
     display: none;
